@@ -202,5 +202,19 @@ nav a:hover {
         background-color: #8e2525;
     }
 
+    nav a {
+        font-size: 18px;
+        padding-left: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
+
+    nav {
+        position: absolute;
+        right: 5%;
+        top: 25%;
+    }
+
 }
 
