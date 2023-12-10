@@ -1,0 +1,206 @@
+:root {
+    --header-color: #00beef;
+    --background-color: #808080;
+    --project-color: #ca3636;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+header {
+    width: 100%;
+    height:7.5%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background-color: var(--header-color);
+    border-bottom: 2px solid black;
+    z-index: 5;
+}
+
+nav {
+    position: absolute;
+    right: 10%;
+    top: 25%;
+}
+
+nav a {
+    font-size:28px;
+    padding-left: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#moonsoft-logo {
+    width: auto;
+    height: 100%;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    margin-left: 10px;
+}
+
+#welcome-section {
+    background-color: var(--background-color);
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    margin-left: -8px;
+    border-bottom: 3px solid black;
+}
+
+#welcome-section h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    margin-top: 200px;
+}
+
+#welcome-section h3 {
+    text-align: center;
+    font-weight: medium;
+    font-size: 28px;
+    text-decoration: underline;
+    margin-top: -15px;
+}
+
+#list {
+    margin-top: 0px;
+    text-align: center;
+}
+
+#welcome-section ul {
+    display: inline-block;
+    text-align: left;
+}
+
+#projects {
+    background-color: var(--project-color);
+    width: 100vw;
+    height: auto;
+    display: inline-block;
+    margin-left: -8px;
+    padding-bottom: 50px;
+}
+
+#projects h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.project-tile {
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 3px;
+    width: 25vw;
+    height: 300px;
+    background-color: #8e2525;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.project-img {
+    border: 2px solid black;
+    border-radius: 1px;
+    width: 75%;
+    height: auto;
+    margin: auto 30px;
+}
+
+.project-title {
+    color: black;
+    font-weight: medium;
+    font-size: 22px;
+    text-decoration: underline;
+    margin: 20px auto;
+}
+
+.project-subtitle {
+    color: black;
+    font-size: 16px;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+#contact {
+    background-color: #8e258e;
+    width: 100vw;
+    height: auto;
+    display: inline-block;
+    margin-left: -8px;
+    padding-bottom: 50px;
+    margin-bottom: -8px;
+}
+
+#contact h5 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: medium;
+}
+
+.contact-div {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.contact-link {
+    display: inline-flex;
+    text-decoration: none;
+}
+
+.contact-p {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.contact-img {
+    width: 64px;
+    height: 64px;
+}
+
+
+@media only screen and (max-width: 550px) {
+    .contact-div {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-list {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-tile {
+        text-align: center;
+        border: 3px solid black;
+        border-radius: 3px;
+        width: 50vw;
+        height: 300px;
+        background-color: #8e2525;
+    }
+
+}
+
